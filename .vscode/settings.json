@@ -1,0 +1,7 @@
+{
+  "editor.formatOnSave": true, // 保存时自动格式化
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit" // 保存时自动修复 ESLint 报错
+  }
+}

@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Directives Expand Test</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+      }
+      .container {
+        margin-bottom: 20px;
+      }
+      button {
+        padding: 10px 20px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <h1>Directives Expand Test</h1>
+
+      <div class="container">
+        <input type="text" v-model="text" placeholder="Type something..." />
+        <button v-copy="text">Copy Input Value</button>
+      </div>
+
+      <div class="container">
+        <button v-copy.toast="'Static Text Copy'">Copy Static Text (with toast)</button>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="../dist/index.full.js"></script>
+    <script>
+      const { createApp } = Vue
+
+      console.log("directivesExpand:", directivesExpand)
+
+      const app = createApp({
+        data() {
+          return {
+            text: "Hello from Vue!"
+          }
+        }
+      })
+
+      app.use(directivesExpand.default)
+
+      app.mount("#app")
+    </script>
+  </body>
+</html>
