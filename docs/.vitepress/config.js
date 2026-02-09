@@ -92,7 +92,7 @@ export default defineConfig({
     resolve: {
       resolve: {
         alias: {
-          "directives-expand": resolve("./src/")
+          "directives-expand": resolve("../../src/")
         }
       }
     }
