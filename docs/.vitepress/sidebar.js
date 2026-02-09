@@ -15,6 +15,10 @@ export const sidebar = {
         { text: "v-debounce", link: "/en/directives/v-debounce" },
         { text: "v-noEmoji", link: "/en/directives/v-noEmoji" }
       ]
+    },
+    {
+      text: "Contact Me",
+      link: "/en/contact-me/"
     }
   ],
   "/": [

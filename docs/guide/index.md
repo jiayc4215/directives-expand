@@ -7,6 +7,7 @@
 ## 搭配使用
 
 - [vue3表单渲染器](https://jiayc4215.github.io/form-render/) vue3表单渲染器
+- [easy-elplus](https://jiayc4215.github.io/easy-elplus/) Element Plus 的增强组件库
 
 ## directives-expand 是什么？
 
@@ -17,12 +18,6 @@ directives-expand 是一个 Vue3 自定义指令扩展库，旨在提供一系�
 - 🚀 **简单易用** - 极简的 API 设计，上手即用
 - 📦 **轻量化** - 极小的包体积，对项目性能几乎无影响
 - 🎨 **功能丰富** - 涵盖了大多数业务开发中需要的指令场景
-
-## 指令列表
-
-目前 directives-expand 提供以下指令：
-
-- **v-copy** - 点击复制指令，支持多种环境（包括浏览器和 uni-app）
 
 ## 为什么选择 directives-expand？
 

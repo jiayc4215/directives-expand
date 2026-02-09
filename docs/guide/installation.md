@@ -74,9 +74,6 @@ pnpm build
 # 安装依赖
 pnpm install
 
-# 启动开发服务器
-pnpm dev
-
 # 启动文档服务器
 pnpm docs:dev
 ```

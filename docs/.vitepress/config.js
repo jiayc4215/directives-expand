@@ -78,7 +78,8 @@ export default defineConfig({
       themeConfig: {
         nav: [
           { text: "Guide", link: "/en/guide/" },
-          { text: "Directives", link: "/en/directives/v-copy" }
+          { text: "Directives", link: "/en/directives/v-copy" },
+          { text: "Contact Me", link: "/en/contact-me/" }
         ],
         socialLinks: [...socialLinks]
       }

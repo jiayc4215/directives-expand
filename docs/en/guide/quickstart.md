@@ -1,15 +1,15 @@
-# 快速开始
+# Quick Start
 
-本节将介绍如何在项目中使用 directives-expand。
+This section will introduce how to use directives-expand in your project.
 
-## 前置要求
+## Prerequisites
 
-- Node.js 16.x 或更高版本
+- Node.js 16.x or higher
 - Vue 3.x
 
-## 完整引入
+## Global Import
 
-如果你想在全局使用所有指令，可以完整引入。
+If you want to use all directives globally, you can import them completely.
 
 ```javascript
 // main.js
@@ -23,11 +23,11 @@ app.use(DirectivesExpand)
 app.mount("#app")
 ```
 
-## 按需引入
+## On-demand Import
 
-directives-expand 支持按需引入，可以减小打包体积。
+directives-expand supports on-demand import to reduce the bundle size.
 
-### 手动引入指令
+### Manually Import Directive
 
 ```javascript
 // main.js
@@ -41,12 +41,12 @@ app.directive("copy", vCopy)
 app.mount("#app")
 ```
 
-### 在组件中使用 (局部指令)
+### Use in Component (Local Directive)
 
 ```vue
 <template>
   <div>
-    <button v-copy="text">复制内容</button>
+    <button v-copy="text">Copy Content</button>
   </div>
 </template>
 
@@ -55,7 +55,7 @@ import { ref } from "vue"
 import { vCopy as vCopyDirective } from "directives-expand"
 
 const text = ref("Hello Directives Expand!")
-// 局部注册指令
+// Register directive locally
 const vCopy = vCopyDirective
 </script>
 ```
