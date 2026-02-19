@@ -2,7 +2,7 @@
 
 ## 技术交流群 711368818
 
-<img src="./public/qq.jpg"  width="200" />
+<img src="https://jiayc4215.github.io/directives-expand/qq.jpg"  width="200" />
 
 ## Introduction
 

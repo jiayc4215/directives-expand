@@ -24,7 +24,6 @@
   "files": [
     "dist",
     "LICENSE",
-    "public",
     "README.md"
   ],
   "exports": {

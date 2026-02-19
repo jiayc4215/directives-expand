@@ -15,13 +15,21 @@ const projectRoot = resolve(__dirname, "..")
 const pkgRoot = resolve(projectRoot, "src")
 const epOutput = resolve(projectRoot, "dist")
 
+// 过滤文件 node_modules nodeJS环境不需要把依赖打包
+const excludeFiles = files => {
+  const excludes = ["node_modules"]
+  return files.filter(path => !excludes.some(exclude => path.includes(exclude)))
+}
+
 // 模块化打包任务函数
 export const buildModules = async () => {
-  const input = await glob("**/*.{js,ts,vue}", {
-    cwd: pkgRoot,
-    absolute: true, // 返回绝对路径
-    onlyFiles: true // 只返回文件的路径
-  })
+  const input = excludeFiles(
+    await glob("**/*.{js,ts,vue}", {
+      cwd: pkgRoot,
+      absolute: true, // 返回绝对路径
+      onlyFiles: true // 只返回文件的路径
+    })
+  )
 
   const bundle = await rollup({
     input, // 配置入口文件
